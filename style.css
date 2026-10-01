@@ -1,7 +1,8 @@
 :root {
 	--intel-blue: #0068b5;
 	--intel-dark: #00285c;
-	--intel-cyan: #00c7fd;
+	--intel-cyan: #b9efff;
+	--intel-cyan-dark: #00627f;
 	--ink: #102a43;
 	--paper: #f4f8fb;
 	--white: #ffffff;
@@ -190,6 +191,11 @@ main {
 	margin-bottom: 10px;
 }
 
+.priorities-heading {
+	color: var(--intel-cyan-dark);
+	font-size: clamp(1.75rem, 2.5vw, 2.25rem);
+}
+
 .timeline-grid {
 	display: flex;
 	flex-wrap: nowrap;
@@ -238,7 +244,7 @@ main {
 }
 
 .timeline-card:focus {
-	outline: 3px solid var(--intel-cyan);
+	outline: 3px solid var(--intel-cyan-dark);
 	outline-offset: 4px;
 }
 
@@ -318,10 +324,45 @@ footer {
 	text-transform: uppercase;
 }
 
+footer nav {
+	width: fit-content;
+	max-width: none;
+	margin: 12px auto 0;
+	justify-content: center;
+	gap: 20px;
+}
+
+footer nav a {
+	color: inherit;
+	text-decoration: none;
+}
+
+footer nav a:hover {
+	color: var(--intel-cyan);
+}
+
 footer span {
 	color: var(--intel-cyan);
 	font-size: 18px;
 	margin-left: 8px;
+}
+
+.newsletter-form .form-control {
+	border-color: #526b7a;
+}
+
+.newsletter-form .form-control:focus {
+	border-color: var(--intel-blue);
+}
+
+.newsletter-form .btn-primary {
+	--bs-btn-bg: var(--intel-blue);
+	--bs-btn-border-color: var(--intel-blue);
+	--bs-btn-hover-bg: #005b9f;
+	--bs-btn-hover-border-color: #005b9f;
+	--bs-btn-active-bg: var(--intel-dark);
+	--bs-btn-active-border-color: var(--intel-dark);
+	--bs-btn-focus-shadow-rgb: 0, 104, 181;
 }
 
 @media (max-width: 650px) {

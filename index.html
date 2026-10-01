@@ -4,7 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Intel: Sustainability Through the Ages</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.rtl.min.css" rel="stylesheet" integrity="sha384-CfCrinSRH2IR6a4e6fy2q6ioOX7O6Mtm1L9vRvFZ1trBncWmMePhzvafv7oIcWiW" crossorigin="anonymous" />
   <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 </head>
 <body>
 
@@ -12,7 +14,7 @@
   <header>
     <nav>
       <a class="nav-logo" href="#top" aria-label="Intel sustainability home">
-        <img src="img/intel-header-logo.svg" alt="Intel Logo" />
+        <img src="img/intel-header-logo.svg" alt="Intel logo" />
       </a>
       <div class="nav-links">
         <a href="#timeline">Timeline</a>
@@ -54,7 +56,7 @@
     <div class="timeline-card" tabindex="0">
       <h2>1968</h2>
       <h3>Intel Founded</h3>
-      <img src="img/1.jpg" alt="Historic technology detail" />
+      <img src="img/1.jpg" alt="Illustration of a semiconductor laboratory with Intel branding and the year 1968" />
       <p>
         Robert Noyce and Gordon Moore rename the newly formed company 
         NM Electronics to Intel Corporation, laying the foundation for 
@@ -66,7 +68,7 @@
     <div class="timeline-card" tabindex="0">
       <h2>1971</h2>
       <h3>First Microprocessor</h3>
-      <img src="img/first processor.webp" alt="Close-up of a microprocessor" />
+      <img src="img/first processor.webp" alt="Close-up of Intel's 4004 microprocessor" />
       <p>
         Intel debuts the 4004, the world's first commercial microprocessor, 
         igniting the microprocessor revolution and propelling the future 
@@ -78,7 +80,7 @@
     <div class="timeline-card" tabindex="0">
       <h2>1978</h2>
       <h3>8086 Processor</h3>
-      <img src="img/8086 processor.webp" alt="Technology circuit detail" />
+      <img src="img/8086 processor.webp" alt="Intel 8086 microprocessor chip" />
       <p>
         Launch of the 8086 processor, establishing the x86 architecture 
         that drives countless PCs and servers in the modern era.
@@ -89,7 +91,7 @@
     <div class="timeline-card" tabindex="0">
       <h2>1985</h2>
       <h3>386 Processor</h3>
-      <img src="img/386.webp" alt="Computer hardware detail" />
+      <img src="img/386.webp" alt="Intel i386 processor chip" />
       <p>
         Intel introduces the 386 processor with 32-bit architecture, 
         ushering in a new era of performance and multitasking for 
@@ -101,7 +103,7 @@
     <div class="timeline-card" tabindex="0">
       <h2>2006</h2>
       <h3>Peak GHG Emissions</h3>
-      <img src="img/marek-piwnicki-WiZOyYqzUss-unsplash.jpg" alt="Green landscape and trees" />
+      <img src="img/marek-piwnicki-WiZOyYqzUss-unsplash.jpg" alt="Industrial smokestacks releasing emissions above a waterfront at sunset" />
       <p>
         This year marks Intel's highest annual greenhouse gas emissions 
         for operations. Over subsequent years, Intel invests heavily in 
@@ -114,7 +116,7 @@
     <div class="timeline-card" tabindex="0">
       <h2>2020</h2>
       <h3>RISE Strategy</h3>
-      <img src="img/RISE.webp" alt="Sunlight through green leaves" />
+      <img src="img/RISE.webp" alt="Intel RISE collage featuring wind turbines, employees, and community activities" />
       <p>
         Intel launches its RISE (Responsible, Inclusive, Sustainable, 
         Enabling) strategy and 2030 goals, aiming to drive industry-wide 
@@ -126,7 +128,7 @@
     <div class="timeline-card" tabindex="0">
       <h2>2022</h2>
       <h3>Net-Zero By 2040</h3>
-      <img src="img/Designer.png" alt="Sustainable technology detail" />
+      <img src="img/Designer.png" alt="Illustration of an Intel building with solar panels and wind turbines beneath Net Zero text" />
       <p>
         Intel announces its commitment to achieve net-zero greenhouse 
         gas emissions (Scope 1 and 2) across its global operations 
@@ -138,7 +140,7 @@
     <div class="timeline-card" tabindex="0">
       <h2>2023</h2>
       <h3>Renewable Electricity</h3>
-      <img src="img/Screenshot 2026-09-22 224046.png" alt="Renewable energy landscape" />
+      <img src="img/Screenshot 2026-09-22 224046.png" alt="Illustration of a solar panel above a light bulb and small cityscape" />
       <p>
         The company achieves 99% renewable electricity usage worldwide, 
         helping to drastically lower carbon emissions and driving progress 
@@ -150,7 +152,7 @@
     <div class="timeline-card" tabindex="0">
       <h2>2024</h2>
       <h3>Sustainability Summit</h3>
-      <img src="img/sustainability.webp" alt="Modern technology detail" />
+      <img src="img/sustainability.webp" alt="Two speakers onstage at Intel's 2024 Sustainability Summit" />
       <p>
         Intel hosts its first Sustainability Summit, uniting suppliers, 
         government officials, and industry leaders to collaborate on 
@@ -159,6 +161,100 @@
     </div>
     </section>
   </main>
-  <footer>Scroll to view the full timeline</footer>
+
+  <!-- Three-column sustainability section -->
+  <section class="py-5" aria-labelledby="sustainability-heading">
+    <div class="container">
+      <h2 id="sustainability-heading" class="priorities-heading mb-4">Sustainability priorities</h2>
+      <div class="row g-4">
+        <div class="col-12 col-md-4">
+          <h3>Climate action</h3>
+          <p>Reduce emissions and move toward net-zero greenhouse gas emissions.</p>
+        </div>
+        <div class="col-12 col-md-4">
+          <h3>Water stewardship</h3>
+          <p>Conserve water and support responsible water use in communities.</p>
+        </div>
+        <div class="col-12 col-md-4">
+          <h3>Waste reduction</h3>
+          <p>Reduce waste and increase reuse and recycling across operations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Expandable details about Intel's sustainability work -->
+  <section class="py-5" aria-labelledby="sustainability-details-heading">
+    <div class="container">
+      <h2 id="sustainability-details-heading" class="mb-4">Explore sustainability topics</h2>
+      <div class="accordion" id="sustainabilityAccordion">
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="rise-heading">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#rise-details" aria-expanded="true" aria-controls="rise-details">
+              What is Intel's RISE strategy?
+            </button>
+          </h3>
+          <div id="rise-details" class="accordion-collapse collapse show" aria-labelledby="rise-heading" data-bs-parent="#sustainabilityAccordion">
+            <div class="accordion-body">
+              RISE stands for Responsible, Inclusive, Sustainable, and Enabling. It guides Intel's 2030 goals for climate action, water stewardship, and waste reduction.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="net-zero-heading">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#net-zero-details" aria-expanded="false" aria-controls="net-zero-details">
+              What is Intel's net-zero commitment?
+            </button>
+          </h3>
+          <div id="net-zero-details" class="accordion-collapse collapse" aria-labelledby="net-zero-heading" data-bs-parent="#sustainabilityAccordion">
+            <div class="accordion-body">
+              Intel aims to reach net-zero greenhouse gas emissions (Scope 1 and 2) across its global operations by 2040.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="renewable-heading">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#renewable-details" aria-expanded="false" aria-controls="renewable-details">
+              How much renewable electricity did Intel use in 2023?
+            </button>
+          </h3>
+          <div id="renewable-details" class="accordion-collapse collapse" aria-labelledby="renewable-heading" data-bs-parent="#sustainabilityAccordion">
+            <div class="accordion-body">
+              Intel reported using 99% renewable electricity worldwide in 2023.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter subscription form -->
+  <section class="py-5" aria-labelledby="newsletter-heading">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-8 col-lg-6">
+          <h2 id="newsletter-heading" class="mb-3">Intel sustainability newsletter</h2>
+          <p>Get updates about Intel's sustainability progress.</p>
+          <form class="newsletter-form" aria-labelledby="newsletter-heading">
+            <div class="mb-3">
+              <label for="newsletter-email" class="form-label">Email address (required)</label>
+              <input type="email" class="form-control" id="newsletter-email" name="email" autocomplete="email" inputmode="email" aria-describedby="newsletter-email-help" required />
+              <div id="newsletter-email-help" class="form-text">Enter a valid email address to receive sustainability updates.</div>
+            </div>
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <small>&copy; 2026 Sustainability Through the Ages</small>
+    <nav aria-label="Footer navigation">
+      <a href="#timeline">Timeline</a>
+      <a href="#impact">Our Impact</a>
+    </nav>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
